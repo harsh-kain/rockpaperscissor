@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color: rgb(4, 35, 64);
+}
+.topSection{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 40%;
+    padding: 1rem;
+    color: white;
+    margin: 2rem 0rem;
+}
+.score{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(4, 35, 64);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.score p{
+    font-size: 1.6rem;
+}
+.score h1{
+    font-size: 3rem;
+}
+.middleSection{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 30%;
+}
+.middleSection img{
+    margin: 1rem 2rem;
+    cursor: pointer;
+    transition: .25s all ease-in-out;
+}
+.middleSection img:hover{
+    transform: scale(1.10);
+}
+.bottomSection{
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+.userContainer,.resultContainer,.computerContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    margin: 2rem 0rem;
+    color: white;
+
+
+}
+.userContainer img,.computerContainer img{
+    padding: 2rem 0rem;
+}
+.resultContainer h1{
+    padding: 2rem 0rem;
+}
+.resultContainer button{
+    background-color: white;
+    color: rgb(4, 35, 64);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
+.showResultContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 80%;
+    color: white;
+}
+.userScore,.cpuScore{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    color: rgb(4, 35, 64);
+    margin: 2rem 2rem;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1800px) {
+    .middleSection{
+        width: 60%;
+    }
+    .topSection{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .middleSection{
+        width: 90%;
+    }
+    .topSection{
+        width: 90%;
+    }
+    .resultContainer h1{
+        font-size: 1.2rem;
+
+    }
+    .resultContainer button{
+        font-size: 1rem;
+    }
+    .userContainer,.resultContainer,.computerContainer{
+    
+       padding: 1rem;
+
+
+}
+}
+@media screen and (max-width: 700px) {
+   .middleSection img{
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+   }
+    .userContainer img , .computerContainer img{
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+   .middleSection img{
+        width: 80px;
+        height: auto;
+        object-fit: cover;
+   }
+    .userContainer img , .computerContainer img{
+        width: 80px;
+        height: auto;
+        object-fit: cover;
+    }
+    .heading h1{
+        font-size: 1.4rem;
+    }
+    .score{
+        padding: .5rem;
+
+    }
+    .score h1{
+        font-size: 1.3rem;
+    }
+    .resultContainer button{
+        background-color: white;
+        color: rgb(4, 35, 64);
+        padding: .7rem;
+        font-size: .9rem;
+        
+    }
+
+
+}
